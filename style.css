@@ -14,7 +14,7 @@
 }
 
 #headmain{
-    font-family: 'Changa One', cursive;
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
     justify-content: center;
     position: relative;
@@ -51,7 +51,7 @@
     height: 100px;
     position: relative;
     top: 50px;
-    font-family: 'Arial Rounded MT';
+    font-family: 'Fredoka One', cursive;
     font-size: 70px;
 }
 .aboutme{
@@ -60,7 +60,7 @@
     justify-content: center;
     text-align: center;
     top: 70px;
-    font-family: 'Arial';
+    font-family: 'Coming Soon', cursive;
     font-size: 24px;
     overflow: hidden;
     height: 400px;
