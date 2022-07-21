@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web1.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <title>Denobili School Mugma</title>
+</head>
+<body onload = "startTimer()">
+    <div class="First">
+        <img src="assets/building5.jpeg" id="buildingimg">
+        <img src="assets/Logo1.png" id="logo1">
+        <div class="pages">
+
+        </div>
+    </div>
+</body>
+<script type = "text/javascript">
+    function displayNextImage() {
+        x = (x === images.length - 1) ? 0 : x + 1;
+        document.getElementById("buildingimg").src = images[x];
+    }
+
+    function displayPreviousImage() {
+        x = (x <= 0) ? images.length - 1 : x - 1;
+        document.getElementById("buildingimg").src = images[x];
+    }
+
+    function startTimer() {
+        setInterval(displayNextImage, 3000);
+    }
+
+    var images = [], x = -1;
+    images[0] = "assets/buildingimg.png";
+    images[1] = "assets/holydns.png";
+    images[2] = "assets/building2.png";
+    images[3] = "assets/building3.jpeg";
+    images[4] = "assets/building4.jpeg";
+    images[5] = "assets/building5.jpeg";
+    images[6] = "assets/building6.jpeg";
+</script>
+</html>

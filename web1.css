@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+#buildingimg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content:  center;
+    filter: blur(4px);
+    filter: opacity(75%);
+    transition: 2s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#buildingimg::after{
+    filter: blur(40px);
+}
+
+
+#logo1{
+    position: absolute;
+    width: 100%;
+    
+}
+
+.pages{
+    position: relative;
+    background-color: black;
+    filter: opacity(0%);
+    justify-content: center;
+    height: 70%;
+    width: 80%;
+    left: 10%;
+    top: 170px;
+
+}
+
+
+@media only screen and (max-width: 400vh) {
+    #buildingimg{
+        position: absolute;
+    }
+    #logo1{
+        position: absolute;
+        top: 50px;
+        height: 90px;
+    }
+}
