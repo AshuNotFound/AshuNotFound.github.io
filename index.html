@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web1.css">
     <link rel="icon" type="image/x-icon" href="assets/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <title>Denobili School Mugma</title>
 </head>
 <body onload = "startTimer()">
     <div class="First">
         <img src="assets/building5.jpeg" id="buildingimg">
         <img src="assets/Logo1.png" id="logo1">
-        <div class="pages">
-
-        </div>
+        <div class="row">
+            <div class="column">
+              <div class="card" id="e1" onclick="alert('i am still working on this!!')">School gallery</div>
+            </div>
+            <div class="column">
+              <div class="card" id="e2" onclick="alert('i am still working on this!!')">Code of Conduct</div>
+            </div>
+            <div class="column">
+              <div class="card" id="e3" onclick="alert('i am still working on this!!')">Original website</div>
+            </div>
+            <div class="column">
+              <div class="card" id="e4" onclick="alert('i am still working on this!!')">Public chat</div>
+            </div>
+            <div class="column">
+                <div class="card" id="e5" onclick="alert('i am still working on this!!')">about me :)</div>
+            </div>
+            <div class="column" onclick="pinkmode()">
+                <div class="card" id="DarkMode">Pink Mode</div>
+            </div>
+          </div>
     </div>
 </body>
 <script type = "text/javascript">
@@ -40,4 +61,16 @@
     images[5] = "assets/building5.jpeg";
     images[6] = "assets/building6.jpeg";
 </script>
+
+<script>
+    function pinkmode(){
+        
+        document.getElementById("e1").style.backgroundColor = 'pink';
+        document.getElementById("e2").style.backgroundColor = 'pink';
+        document.getElementById("e3").style.backgroundColor = 'pink';
+        document.getElementById("e4").style.backgroundColor = 'pink';
+        document.getElementById("e5").style.backgroundColor = 'pink';
+    }
+</script>
+
 </html>
