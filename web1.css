@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 #buildingimg{
     position: absolute;
@@ -26,20 +26,55 @@
     
 }
 
-.pages{
+.row{
     position: relative;
-    background-color: black;
-    filter: opacity(0%);
+    filter: opacity(100%);
     justify-content: center;
     height: 70%;
     width: 80%;
     left: 10%;
     top: 170px;
+}
 
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    
+    padding: 40px 10px;
+}
+  
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 25px;
+    text-align: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    font-family: 'Coming Soon', cursive;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#Darkmode{
+    background-color: pink;
+    color: rebeccapurple;
 }
 
 
-@media only screen and (max-width: 400vh) {
+@media only screen and (max-width: 600px) {
     #buildingimg{
         position: absolute;
     }
@@ -47,5 +82,15 @@
         position: absolute;
         top: 50px;
         height: 90px;
+    }
+    .card{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 33.3%;
+      display: block;
+      margin-bottom: 20px;
     }
 }
