@@ -86,11 +86,13 @@
     .card{
         font-size: small;
     }
-}
-@media screen and (max-width: 600px) {
     .column {
       width: 33.3%;
       display: block;
       margin-bottom: 20px;
+    }
+    #e5, #Darkmode{
+      position: relative;
+      top: -40px;
     }
 }
