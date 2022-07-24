@@ -32,23 +32,36 @@
                 <div class="card" id="e5" onclick="alert('i am still working on this!!')">about me :)</div>
             </div>
             <div class="column" onclick="pinkmode()">
-                <div class="card" id="DarkMode">Pink Mode</div>
+                <div class="card" id="DarkMode">Pink mode</div>
             </div>
           </div>
     </div>
 </body>
+
 <script type = "text/javascript">
     function displayNextImage() {
         x = (x === images.length - 1) ? 0 : x + 1;
         document.getElementById("buildingimg").src = images[x];
+    }   
+
+    function FadeAnime(){
+        const bimg = document.getElementById("buildingimg");
+        bimg.style.transition = '3s';
+        bimg.style.opacity = '67%';
     }
 
-    function displayPreviousImage() {
-        x = (x <= 0) ? images.length - 1 : x - 1;
-        document.getElementById("buildingimg").src = images[x];
+    function NoFadeAnime(){
+        const bimg = document.getElementById("buildingimg");
+        bimg.style.transition = '0s';
+        bimg.style.opacity = '100%';
     }
+    
+    NoFadeAnime()
+    
 
     function startTimer() {
+        setInterval(NoFadeAnime, 2980)
+        setInterval(FadeAnime, 3000);
         setInterval(displayNextImage, 3000);
     }
 
