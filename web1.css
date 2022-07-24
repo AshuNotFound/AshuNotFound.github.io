@@ -73,7 +73,10 @@
     filter: opacity(100%);
     transition: .9s;
 }
-
+#e3{
+    text-decoration: none;
+    color: black;
+}
 
 @media only screen and (max-width: 600px) {
     #buildingimg{
