@@ -23,7 +23,7 @@
               <div class="card" id="e2" onclick="alert('i am still working on this!!')">Code of Conduct</div>
             </div>
             <div class="column">
-              <div class="card" id="e3" onclick="alert('i am still working on this!!')">Original website</div>
+              <a href='denobilimugma.in' class="card" id="e3")">Original website</a>
             </div>
             <div class="column">
               <div class="card" id="e4" onclick="alert('i am still working on this!!')">Public chat</div>
@@ -44,24 +44,7 @@
         document.getElementById("buildingimg").src = images[x];
     }   
 
-    function FadeAnime(){
-        const bimg = document.getElementById("buildingimg");
-        bimg.style.transition = '3s';
-        bimg.style.opacity = '67%';
-    }
-
-    function NoFadeAnime(){
-        const bimg = document.getElementById("buildingimg");
-        bimg.style.transition = '0s';
-        bimg.style.opacity = '100%';
-    }
-    
-    NoFadeAnime()
-    
-
     function startTimer() {
-        setInterval(NoFadeAnime, 2980)
-        setInterval(FadeAnime, 3000);
         setInterval(displayNextImage, 3000);
     }
 
