@@ -82,6 +82,10 @@
     bottom: 25px;
 }
 
+#e1{
+    color: red;
+}
+
 @media only screen and (max-width: 600px) {
     #buildingimg{
         position: absolute;
